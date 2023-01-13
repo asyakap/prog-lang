@@ -60,6 +60,7 @@ window.onload = function () {
     document.getElementById("output1").innerText = result;
     document.getElementById("output1").style.color = color;
     document.getElementById("output2").innerText = description;
+    document.getElementById("output2").style.color = color;
   });
 
 }
