@@ -1,8 +1,7 @@
-.image {
-  opacity: 0.04;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
+body {
+  background-image: url("img/image.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
+

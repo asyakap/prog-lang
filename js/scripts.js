@@ -12,7 +12,6 @@ window.onload = function () {
     const radioSelection2 = document.querySelector("input[name='interest']:checked").value;
     const radioSelection3 = document.querySelector("input[name='learner']:checked").value;
 
-    console.log(radioSelection1)
     // running a check for level
     let result = "";
     if (radioSelection1 === "beginner") {
@@ -53,6 +52,7 @@ window.onload = function () {
     }
 
     document.getElementById("output").innerText = result;
+    document.getElementById("output").style.color = color;
   });
 
 }
