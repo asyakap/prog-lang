@@ -4,23 +4,16 @@ window.onload = function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const name = document.querySelector("input#name").value;
-        const dob = document.getElementById("born").value;
-        const favoriteColor = document.getElementById("color").value;
+        const  = document.querySelector("input#name").value;
         const radioSelection = document.querySelector("input[name='skills']:checked").value;
 
         console.log(name, dob, favoriteColor, radioSelection);
 
         let result = "";
-        if (Date(dob) > Date("01/01/1993")) {
-          result = "young";
+        if () {
+          result = ;
         }
-        if (("1970-01-01" < dob ) && (dob < "1992-12-31")) {
-          result = "middle age"
-        }
-        else {
-          result = "old"
-        }
+
             
             document.getElementById("output").innerText = result;
           });

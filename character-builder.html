@@ -2,66 +2,35 @@
 <html lang="en=US">
 
 <head>
-    <title>Character Builder</title>
+    <title>Programming Language Suggester</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
 </head>
 
 <body>
-    <h1>Character Builder</h1>
-    <p>Please fill the form below with your character's name, date of birth, favorite color, and special skills</p>
+    <h1>Programming Language Suggester</h1>
+    <h3>This is a webpage to help you to decide which programming languages are a best suit for you at the moment.</h3>
+    <p>Please fill the form below:</p>
     <div>
         <form>
-            <label for="name">Character's name</label>
+            <label for="name"></label>
             <input id="name" type="string">
-            <br>
-            <br>
-            <label for="born">Date of birth:</label>
-            <input id="born" type="date">
-            <br>
-            <br>
-            <label for="color">What is your favorite color?</label>
-            <input id="color" type="color">
-            <br>
-            <br>
+
 
         </form>
 
         <form id="radio-form">
-            <label for="skills">Special skill:</label><br>
-            <input type="radio" name="skills" value="superspeed" checked>
-            <label for="choc">Super speed</label><br>
-            <input type="radio" name="skills" value="invisible">
-            <label for="van">Invisible</label><br>
-            <input type="radio" name="skills" value="mindreading">
-            <label for="cookies">Mind Reading</label>
-            <br>
-            <br>
+            <label for="skills"></label><br>
+            <input type="radio" name="skills" value="" checked>
+
             <button type="submit">Submit</button>
         </form>
-        
-<!--    <label>
-            <input type="radio" name="operator" value="add">
-            add
-        </label>
-        <label>
-            <input type="radio" name="operator" value="subtract">
-            subtract
-        </label>
-        <label>
-            <input type="radio" name="operator" value="multiply">
-            multiply
-        </label>
-        <label>
-            <input type="radio" name="operator" value="divide">
-            divide
-        </label> -->
 
-        <h2>Your character</h2>
+        <h2>The three top languages for you to learn are:</h2>
         <p> <span id="output"></span></p>
         <p id="address"></p>
 
-    </div>
+    </div>s
 </body>
 
 </html>

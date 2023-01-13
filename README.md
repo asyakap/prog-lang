@@ -1,6 +1,6 @@
-# Calculator project
+# Programming Languages Suggester
 
-#### By Asia Kaplanyan and Molly Donegan
+#### By Asia Kaplanyan 
 
 ## Technologies Used
 
@@ -10,7 +10,7 @@
 
 ## Description
 
-_This is a page for building a character._
+_This is a page to help user to determine which programming languages are the best fit for him/her._
 
 ## Setup/Installation Requirements
 
@@ -27,4 +27,4 @@ _This is a page for building a character._
 
 _If you run into a problem or in case you have any ideas or concerns please contact me._
 
-Copyright (c) _01/12/2023_ _Asia Kaplanyan and Molly Donegan_ 
+Copyright (c) _01/13/2023_ _Asia Kaplanyan_ 
