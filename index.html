@@ -13,20 +13,41 @@
     <p>Please fill the form below:</p>
     <div>
         <form>
-            <label for="name"></label>
+            <label for="name">Your name</label>
             <input id="name" type="string">
+            <br>
+            <br>
+
 
 
         </form>
+        <form id="radio-form1">
+            <label for="level">What is your level of programming skills?</label><br>
+            <input type="radio" name="level" value="beginner" checked>
+            <label for="level">beginner</label><br>
+            <input type="radio" name="level" value="intermidiate">
+            <label for="level">intermidiate</label><br>
+            <input type="radio" name="level" value="advanced">
+            <label for="level">advanced</label><br>
+            <br>
+        </form>
 
-        <form id="radio-form">
-            <label for="skills"></label><br>
-            <input type="radio" name="skills" value="" checked>
-
+        <form id="radio-form2">
+            <label for="interest">What interests you the most?</label><br>
+            <input type="radio" name="interest" value="web" checked>
+            <label for="interest">Make webpages</label><br>
+            <input type="radio" name="interest" value="iOS">
+            <label for="interest">Make iOS apps</label><br>
+            <input type="radio" name="interest" value="android">
+            <label for="interest">Make Android apps</label><br>
+            <input type="radio" name="interest" value="data">
+            <label for="interest">Data Science</label><br>
+            <input type="radio" name="interest" value="cloud">
+            <label for="interest">Cloud computing</label><br>
+            <br>
             <button type="submit">Submit</button>
         </form>
 
-        <h2>The three top languages for you to learn are:</h2>
         <p> <span id="output"></span></p>
         <p id="address"></p>
 
