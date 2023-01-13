@@ -1,5 +1,5 @@
 window.onload = function () {
-  const form = document.querySelector("form#radio-form3");
+  const form = document.querySelector("form#radio-form4");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -11,11 +11,16 @@ window.onload = function () {
     const radioSelection1 = document.querySelector("input[name='level']:checked").value;
     const radioSelection2 = document.querySelector("input[name='interest']:checked").value;
     const radioSelection3 = document.querySelector("input[name='learner']:checked").value;
+    const checkbox1 = document.querySelector("input[value=javaScript]:checked").value;
+    const checkbox2 = document.querySelector("input[value=swift]:checked");
+    const checkbox3 = document.querySelector("input[value=java]:checked");
+    const checkbox4 = document.querySelector("input[value=python]:checked");
+    const checkbox5 = document.querySelector("input[value=cplus]:checked");
+
+    console.log(checkbox1, checkbox2, checkbox3, checkbox4, checkbox5);
 
     let result = "";
     let description = "";
-
-    console.log(name, dob, color);
 
     //running a check for empty fields
     if ((name === "") || (dob === "")) {
@@ -40,12 +45,13 @@ window.onload = function () {
     }
 
     // running a check for preferences
-    if ((radioSelection2 === "web") && (name !== "") && (dob !== "")) {
+    if ((radioSelection2 === "web") && (checkbox1 === "") && (name !== "") && (dob !== "")) {
       result = result + " Your best choice of programming languages is JavaScript.";
       description = "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices. JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design."
+    } else if ((radioSelection2 === "web") && (checkbox1 !== "") && (name !== "") && (dob !== "")) {
     } else if ((radioSelection2 === "iOS") && (name !== "") && (dob !== "")) {
-      result = result + " Your best choice of programming languages is Swift.";
-      description = "Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community. First released in 2014,[10] Swift was developed as a replacement for Apple's earlier programming language Objective-C. Swift works with Apple's Cocoa and Cocoa Touch frameworks, and a key aspect of Swift's design was the ability to interoperate with the huge body of existing Objective-C code developed for Apple products over the previous decades. Apple intended Swift to support many core concepts associated with Objective-C, notably dynamic dispatch, widespread late binding, extensible programming and similar features, but in a safer way, making it easier to catch software bugs."
+      result = result + " It looks like you've already learned JavaScript. How about mastering Kotlin?";
+      description = "Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, [failed verification] but type inference allows its syntax to be more concise. Kotlin mainly targets the JVM, but also compiles to JavaScript (e.g., for frontend web applications using React) or native code via LLVM (e.g., for native iOS apps sharing business logic with Android apps). Language development costs are borne by JetBrains, while the Kotlin Foundation protects the Kotlin trademark."
     } else if ((radioSelection2 === "android") && (name !== "") && (dob !== "")) {
       result = result + " Your best choice of programming languages is Java.";
       description = "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. Java was originally developed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun Microsystems' Java platform."
