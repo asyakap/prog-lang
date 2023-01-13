@@ -17,8 +17,14 @@
             <input id="name" type="string">
             <br>
             <br>
-
-
+            <label for="born">Date of birth:</label>
+            <input id="born" type="date">
+            <br>
+            <br>
+            <label for="color">What is your favorite color?</label>
+            <input id="color" type="color">
+            <br>
+            <br>
 
         </form>
         <form id="radio-form1">
@@ -45,13 +51,23 @@
             <input type="radio" name="interest" value="cloud">
             <label for="interest">Cloud computing</label><br>
             <br>
+        </form>
+
+        <form id="radio-form3">
+            <label for="learner">What type of learner are you?</label><br>
+            <input type="radio" name="learner" value="slow" checked>
+            <label for="learner">Slow. I require a lot of time to study new concepts and prefer languages with easy logic.</label><br>
+            <input type="radio" name="learner" value="moderate">
+            <label for="learner">Moderate. I prefer medium difficulty.</label><br>
+            <input type="radio" name="learner" value="quick">
+            <label for="learner">Quick. I enjoy studying difficult concepts.</label><br>
+            <br>
             <button type="submit">Submit</button>
         </form>
 
-        <p> <span id="output"></span></p>
-        <p id="address"></p>
+        <p id="output"></p>
 
-    </div>s
+    </div>
 </body>
 
 </html>
