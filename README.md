@@ -15,7 +15,7 @@ _This is a page to help user to determine which programming languages are the be
 ## Setup/Installation Requirements
 
 * _You need a web browser_
-
+* _Open this page from your browser https://asyakap.github.io/prog-lang/_
 
 
 ## Known Bugs
